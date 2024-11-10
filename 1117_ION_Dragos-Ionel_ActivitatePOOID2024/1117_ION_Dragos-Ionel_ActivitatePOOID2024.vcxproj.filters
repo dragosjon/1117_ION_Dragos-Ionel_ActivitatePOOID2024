@@ -21,5 +21,8 @@
     <ClCompile Include="..\..\Recapitulare 2%2819.10.2024%29.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
