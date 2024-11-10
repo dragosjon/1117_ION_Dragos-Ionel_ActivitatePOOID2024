@@ -21,7 +21,13 @@
     <ClCompile Include="Recapitulare + Exercitii.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Test.cpp">
+    <ClCompile Include="TestScoala.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\rezolvareTest+Operatori.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ghiozdan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

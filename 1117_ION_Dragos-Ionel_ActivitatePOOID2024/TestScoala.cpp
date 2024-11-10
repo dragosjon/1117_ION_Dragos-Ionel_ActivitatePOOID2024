@@ -21,8 +21,11 @@ public:
 	//constructori cu toti parametrii
 	Scoala(int numarClase, int* numarEleviDinClasa, int numarScoala) : numarScoala(numarScoala) {
 		this->numarClase = numarClase;
-		this->numarEleviDinClasa = new int;
-		*(this->numarEleviDinClasa) = *numarEleviDinClasa;
+		this->numarEleviDinClasa = new int[numarClase];
+		for (int i = 0; i < numarClase; i++) {
+			this->numarEleviDinClasa[i] = numarEleviDinClasa[i];
+		}
+		
 	}
 
 	//constructor de copiere
@@ -51,13 +54,18 @@ public:
 		this->numarEleviDinClasa = new int(*elevi);
 	}
 
-	//afisare
-	void afisareScoala() {
-		cout << "Numar Scoala: " << numarScoala << endl;
-		cout << "Numar Clase: " << numarClase << endl;
-		cout << "Numar Elevi din Clase: " << *numarEleviDinClasa << endl;
-		cout << "Nume Director: " << numeDirector << endl;
- 	}
+	//supraincarca operatorul <<
+	friend ostream& operator<<(ostream& out, const Scoala& s) {
+		out << "Numarul de clase este: " << s.numarClase << endl;
+		out << "Numarul de elevi din clasa este: ";
+		for (int i = 0; i < s.numarClase; i++) {
+			out << s.numarEleviDinClasa[i] << " ";
+		}
+		out << endl;
+		out << "Numele directorului este: " << numeDirector << endl;
+		return out;
+	}
+
 
 	//destructor
 	~Scoala() {
@@ -69,10 +77,9 @@ public:
 
 int main() {
 	Scoala scoala1;
-
-
-	Scoala scoala2(2, new int(40), 10);
-	scoala2.afisareScoala();
-
+	
+	Scoala scoala2(2, new int[2] { 10, 20}, 10);
+	//afiseaza scoala2
+	cout << scoala2 << endl;
 
 }
