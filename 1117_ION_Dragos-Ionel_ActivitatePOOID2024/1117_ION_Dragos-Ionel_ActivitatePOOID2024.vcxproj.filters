@@ -24,10 +24,13 @@
     <ClCompile Include="TestScoala.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\rezolvareTest+Operatori.cpp">
+    <ClCompile Include="..\..\..\..\rezolvareTest%28Ghiozdan%29 +Operatori.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Ghiozdan.cpp">
+    <ClCompile Include="%28Eu%29Ghiozdan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PredatdeProf%28farmacie%29.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
