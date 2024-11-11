@@ -33,5 +33,8 @@
     <ClCompile Include="PredatdeProf%28farmacie%29.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Avion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
