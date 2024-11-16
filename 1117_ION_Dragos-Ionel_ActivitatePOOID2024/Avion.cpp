@@ -89,7 +89,7 @@ public:
 		return *this;
 	}
 
-	//Sa se supra incarce operatorul [] care va indexa vectorul de varste ale pasagerilor. Implementare permite si modificarea acestei varste. 
+	//Sa se supraincarce operatorul [] care va indexa vectorul de varste ale pasagerilor. Implementare permite si modificarea acestei varste. 
 	float& operator[](int index) {
 		if (index >= 0 && index < capacitate) {
 			return varstaPasageri[index];
@@ -99,7 +99,16 @@ public:
 		}
 	}
 
-
+	//supraincarcare operator !=
+	bool operator!=(Avion a) {
+		if (this->capacitate != a.capacitate) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
 
 
 	//afisare
@@ -167,6 +176,14 @@ int main() {
 		cout << mesaj << endl;
 	}
 
-	
+	//operator !=
+	if (avion3 != avion4) {
+		cout << "Avioanele sunt diferite" << endl;
+	}
+	else {
+		cout << "Avioanele sunt la fel" << endl;
+	}
+
+
 
 }
