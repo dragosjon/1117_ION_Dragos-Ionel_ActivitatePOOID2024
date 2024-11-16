@@ -36,5 +36,11 @@
     <ClCompile Include="Avion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Tema1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Operatori.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
